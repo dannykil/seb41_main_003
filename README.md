@@ -1,5 +1,5 @@
 # SEB_41_MAIN_PROJECT
-Cloned from https://github.com/codestates-seb/seb41_main_003
+Cloned from https://github.com/codestates-seb/seb41_main_003   
 부트캠프를 통해 배웠던 기술 스택과 Pre-Project에서 경험한 내용을 토대로 실제 서비스를 기획 단계부터 배포까지 개발합니다.
 
 # 과외차이
