@@ -1,0 +1,100 @@
+@import url('../../default.css');
+
+.container {
+  background-color: $snow;
+  border-radius: 3px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  box-shadow: $buttonShadow;
+}
+
+.img {
+  width: 90%;
+  height: 200px;
+  object-fit: cover;
+  overflow: hidden;
+  margin-top: 16px;
+  @media screen and (max-width: 768px) {
+    height: 150px;
+  }
+
+  @media screen and (max-width: 480px) {
+    height: 120px;
+  }
+}
+
+.nameAndStars {
+  margin-top: 10px;
+  width: 90%;
+
+  .name {
+    margin-bottom: 4px;
+
+    > span:first-child {
+      font-size: $font4;
+      font-weight: $font4W;
+      margin-right: 4px;
+    }
+
+    > span:last-child {
+      font-size: $font6;
+      font-weight: $font6W;
+    }
+  }
+}
+
+.yellowStar {
+  fill: $yellow;
+  font-size: 18px;
+}
+
+.emptyStar {
+  fill: $yellow;
+  font-size: 18px;
+}
+
+.halfStar {
+  fill: $yellow;
+  font-size: 18px;
+}
+
+.subjectBox {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  width: 90%;
+  margin-top: 8px;
+}
+
+.subject {
+  margin-right: 4px;
+  margin-bottom: 4px;
+}
+
+.school {
+  width: 90%;
+  margin-top: 12px;
+  font-size: $font6;
+  font-weight: $font6W;
+
+  @media only screen and (max-width: 443px) {
+    font-size: $para;
+    font-weight: $paraW;
+  }
+}
+
+.bio {
+  width: 90%;
+  margin-top: 8px;
+  font-size: $para;
+  font-weight: $paraW;
+  margin-bottom: 16px;
+
+  @media only screen and (max-width: 443px) {
+    font-size: $sub;
+    font-weight: $subW;
+  }
+}

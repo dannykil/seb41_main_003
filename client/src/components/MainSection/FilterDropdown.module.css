@@ -1,0 +1,44 @@
+@import url('../../default.css');
+
+.dropdownContainer {
+  display: block;
+  position: absolute;
+  top: 36px;
+  right: 0;
+  background-color: $white;
+  padding: 16px;
+  border-radius: 3px;
+  box-shadow: $buttonShadow;
+  width: 120px;
+
+  @media screen and (max-width: 768px) {
+    top: 25px;
+  }
+}
+
+.dropdown {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 8px;
+
+  &:last-child {
+    margin: 0;
+  }
+
+  > button {
+    width: 100%;
+    font-size: $font5;
+    font-weight: $font5W;
+    padding: 4px;
+
+    &:hover {
+      text-decoration: underline;
+    }
+
+    @media screen and (max-width: 768px) {
+      font-size: $font6;
+      font-weight: $font6W;
+    }
+  }
+}

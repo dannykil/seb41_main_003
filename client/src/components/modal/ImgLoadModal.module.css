@@ -1,0 +1,100 @@
+@import url('../../default.css');
+
+.view {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  background-color: $white;
+  padding: 16px 0;
+  max-width: 522px;
+  width: 80%;
+
+  > button {
+    margin-bottom: 32px;
+  }
+}
+
+.text {
+  font-size: $font5;
+  font-weight: $font5W;
+  margin: 32px 0;
+  white-space: pre-line;
+  text-align: center;
+
+  @media screen and (max-width: 768px) {
+    font-size: $font6;
+    font-weight: $font6W;
+  }
+}
+
+.fileBox {
+  display: flex;
+
+  > input:first-child {
+    display: inline-block;
+    height: 32px;
+    padding: 0 10px;
+    vertical-align: middle;
+    border: 1px solid $silver;
+    border-radius: 5px 0 0 5px;
+    width: 78%;
+    color: $silver;
+
+    @media screen and (max-width: 480px) {
+      font-size: $sub;
+      font-weight: $subW;
+    }
+  }
+
+  > label {
+    display: inline-block;
+    padding: 8px 16px;
+    color: $black;
+    font-size: $para;
+    font-weight: $paraW;
+    text-align: center;
+    vertical-align: middle;
+    background-color: $silver;
+    cursor: pointer;
+    height: 32px;
+    max-width: 104px;
+    width: 50%;
+    border-radius: 0 5px 5px 0;
+
+    @media screen and (max-width: 480px) {
+      font-size: $sub;
+      font-weight: $subW;
+      padding: 8px;
+    }
+  }
+
+  > input:last-child {
+    position: absolute;
+    width: 0;
+    height: 0;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+  }
+}
+
+.buttonBox {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  max-width: 280px;
+  width: 70%;
+  margin-bottom: 32px;
+  margin-top: 32px;
+
+  @media screen and (max-width: 480px) {
+    > button {
+      font-size: $font6;
+      font-weight: $font6W;
+      width: 30%;
+      padding: 4px 8px;
+    }
+  }
+}
